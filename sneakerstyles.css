@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font: .4em "Helvetica";
+
+}
+
+header {
+
+}
+
+.logo-img {
+  height: 30px;
+}
+
+section {
+
+}
+
+.bigshoe {
+  width: 70%;
+}
+h2 {
+  font-size: 2em;
+}
+
+.quicksneakers {
+  font-size: 3.5em
+}
+
+.red-background {
+  background-color: #f45c42;
+  color: white;
+}
+
+#ShopShoes {
+  background-color: white;
+  color: black;
+}
+
+.littleshoe {
+  width: 50%;
+}
