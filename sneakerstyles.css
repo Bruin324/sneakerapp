@@ -40,3 +40,7 @@ h2 {
 .littleshoe {
   width: 50%;
 }
+
+h3 {
+  text-decoration: underline black;
+}
