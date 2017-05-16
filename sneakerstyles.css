@@ -1,10 +1,17 @@
+/* /////////////////////////////////////////
+                  Overall
+//////////////////////////////////////////*/
+
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-size: 12px;
   font-family: sans-serif;
   font-weight: 600;
-  width: 1000px;
-  padding: 0px 50px;
 }
 
 .text-red {
@@ -27,16 +34,36 @@ body {
   color: black;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+/* /////////////////////////////////////////
+                   Header
+//////////////////////////////////////////*/
+
 header {
-  padding: 20px;
+  padding: 20px 20px;
   font-size: 10px;
 }
 
 .logo-img {
+  padding-right: 10px;
+  float: left;
   height: 20px;
 }
 
 .navigation {
+  float:left;
   font-weight: bold;
   padding: 5px 0px;
   color: #f45c42;
@@ -63,26 +90,42 @@ header {
 }
 
 .site-links {
+  float: right;
   font-weight: bold;
   padding: 5px 0px;
   color: #f89887;
 }
 
+/*//////////////////////////////////////////
+                  Main Shoe
+//////////////////////////////////////////*/
+
 .main-shoe {
   border-top: 5px solid #f24526;
-  background-color: #f45c42;
+  background: linear-gradient(to right, #ff3399 0%, #ff3300 100%);
   color: white;
-  padding: 30px 200px 60px 200px;
-  width: 500px;
+  padding: 30px 125px 60px 125px;
+}
+
+.main-shoe-left {
+  width: 55%;
+  float: left;
+}
+
+.main-shoe-right {
+  width: 40%;
+  float: right;
 }
 
 .back-shoes {
   text-decoration: none;
-  font-size: 10px;
+  font-size: 8px;
+  padding-bottom: 15px;
 }
 
 .bigshoe {
-  width: 500px;
+  width: 100%;
+  padding-top: 20px;
 }
 
 #big-shoe-name {
@@ -92,12 +135,14 @@ header {
 }
 
 .release-date {
+  clear:left;
   font-size: 10px;
   font-weight: 400;
   margin: 0;
 }
 
 .sneaker-details {
+  line-height: 2em;
   margin: 20px 0px;
   padding: 20px 0px;
   border-top: 1px dashed #990000;
@@ -108,12 +153,12 @@ header {
 }
 
 .prices {
-  display: inline-block;
-  font-size: 15px;
+  display: block;
+  font-size: 20px;
   font-weight: lighter;
 }
 
-currency {
+.currency {
   font-size: 50%;
   vertical-align: text-top;
 }
@@ -129,16 +174,26 @@ currency {
   padding: 10px 15px;
 }
 
+/*//////////////////////////////////////////
+                  White Background
+//////////////////////////////////////////*/
+
 .white-background {
-  padding: 30px 200px 60px 200px;
+  padding: 30px 125px 60px 125px;
 }
 
 .content-links {
   border-bottom: 1px solid #f89887;
+  padding: 0;
 }
 
 .reviews {
+  float: right;
   font-size: 10px;
+}
+
+.middle-content {
+  padding-bottom: 25px;
 }
 
 .text-light {
@@ -151,11 +206,20 @@ currency {
   padding-top: 5px;
 }
 
+/*//////////////////////////////////////////
+                  Second Shoes Section
+//////////////////////////////////////////*/
+
 .second-shoes {
-  background-color: #f45c42;
+  background: linear-gradient(to right, #ff3399 0%, #ff3300 100%);
   color: white;
-  padding: 10px 200px 20px 200px;
-  width: 500px;
+  padding: 30px 125px;
+}
+
+.little-sneaker{
+  float: left;
+  width: 33%;
+  padding: 20px;
 }
 
 #ShopShoes {
@@ -164,17 +228,34 @@ currency {
   margin: 0;
   padding: 20px 200px;
   text-align: center;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.little-shoe-prices {
+  display: block;
+  font-size: 17px;
+  font-weight: lighter;
 }
 
 .littleshoe {
-  width: 400px;
+  width: 100%;
 }
+
 
 .little-shoe-name {
   margin-bottom: 5px;
 }
 
+/*//////////////////////////////////////////
+                  footer
+//////////////////////////////////////////*/
+
 footer {
-  padding: 20px;
+  padding: 20px 20px;
   font-size: 10px;
+}
+
+.footer-links {
+  float: right;
 }
